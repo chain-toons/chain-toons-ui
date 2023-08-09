@@ -1,13 +1,14 @@
 import "./App.css";
+import { SplashScreen } from "./components/SplashScreen";
 
 function App() {
   return (
-    <>
-      <div>
-        <h1 className='text-3xl font-bold underline'>Chain toons</h1>
-      </div>
-    </>
+    <div className='flex min-h-screen flex-col'>
+      <main className='mx-auto w-4/5 max-w-7xl py-8'>
+        <SplashScreen />
+      </main>
+    </div>
   );
 }
 
-export default App;
+export { App };
